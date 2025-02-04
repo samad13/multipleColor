@@ -1,0 +1,25 @@
+.targetColor{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20%;
+}
+
+.buttonContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.reset{
+    background-color: black;
+}
+.scoreAndReset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+width: 50%;
+}
+
+.score{
+    font-size: 2rem;
+}

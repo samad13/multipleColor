@@ -1,0 +1,23 @@
+
+
+.all {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  flex-direction: column ;
+} 
+
+button{
+  background-color: #99fb61;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 20px;
+  margin: 1em;
+  text-decoration: none;
+  will-change: transform;
+  transition: transform 300ms;
+  height: 3em;
+  width: 5em;
+}
