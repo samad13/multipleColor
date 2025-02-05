@@ -18,6 +18,12 @@
   transition: transform 300ms;
   height: 6em;
   width: 6em;
+ 
+}
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  
 }
 
 .logo {
@@ -55,3 +61,11 @@
 .read-the-docs {
   color: #888;
 }
+/* body{
+  background-image:url('./assets/carl-raw-o59Gt5O4QZ4-unsplash.jpg');
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  width: 80vw;
+  height: 80vh;
+
+} */
