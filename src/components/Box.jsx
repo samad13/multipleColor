@@ -69,7 +69,7 @@ const Box = () => {
       </div>
       <div className={style.scoreAndReset}>
         <div data-testid="score" className={style.score}>Score: {score}</div>
-        {/* Display correct or wrong message */}
+    
        
         {correct !== null && (correct ? <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp">Correct<MdCelebration /></h1> : <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp">Wrong</h1>)}
         <button data-testid="newGameButton" className={style.reset} onClick={reset}>new game</button> 
