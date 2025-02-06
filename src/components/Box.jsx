@@ -6,7 +6,7 @@ import { MdCelebration } from "react-icons/md";
 
 
 const Box = () => {
-  const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+  const colors = ['red', 'pink', 'green', 'yellow', 'purple', 'orange'];
   
   
   const [score, setScore] = useState(0);
@@ -69,8 +69,16 @@ const Box = () => {
       <div className={style.scoreAndReset}>
         <div data-testid="score" className={style.score}>Score: {score}</div>
     
-       
-        {correct !== null && (correct ? <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp" style={{ color: 'white' }}>Correct<MdCelebration /></h1> : <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp" style={{ color: 'white' }}>Wrong</h1>)}
+    
+        {correct !== null && (
+  <h1
+    data-testid="gameStatus"
+    className={`animate__animated animate__fadeOutUp status-message ${correct ? "correct" : "wrong"}`}
+    style={{ color: 'white' }}
+  >
+    {correct ? <>Correct <MdCelebration /></>  : "Wrong"}
+  </h1>
+)}
         <button data-testid="newGameButton" className={style.reset} onClick={reset}>new game</button> 
       </div>
     </div>
