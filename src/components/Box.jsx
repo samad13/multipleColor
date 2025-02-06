@@ -71,6 +71,7 @@ const Box = () => {
     
     
         {correct !== null && (
+    
   <h1
     data-testid="gameStatus"
     className={`animate__animated animate__fadeOutUp status-message ${correct ? "correct" : "wrong"}`}

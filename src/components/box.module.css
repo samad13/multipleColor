@@ -10,20 +10,56 @@
     gap: 1rem;
 }
 
-.reset{
-    background-color: black;
-}
+
 .scoreAndReset{
     display: flex;
     justify-content: space-between;
     align-items: center;
-width: 50%;
+width: 50%; 
+position: relative;
 }
 
 .score{
-    font-size: 2rem;
+     font-size: 2rem; 
     color: white;
 }
-/* .animate__animated{
-    color: white;
-} */
+.title {
+    font-size: 2rem; 
+    color:darkblue;
+}
+.text{
+    color:darkblue;
+}
+
+.reset{
+     background-color: hsl(105, 22%, 96%); 
+    border: none;
+     border-radius: 0.5em; 
+    color: darkblue;
+    
+    
+}
+
+@media (max-width: 600px) {
+    .targetColor {
+      width: 5rem;
+      height: 5rem;
+    }
+  
+    .buttonContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .scoreAndReset {
+      flex-direction: column;
+      position: relative;
+    }
+
+
+    .status-message {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  }

@@ -7,6 +7,7 @@
   height: 80vh; 
   flex-direction: column ;
   background-color: darkblue;
+  border-radius: 2rem;
   
 } 
 
@@ -22,4 +23,12 @@ button{
   transition: transform 300ms;
   height: 3em;
   width: 5em;
+}
+
+@media (max-width: 600px) {
+  button {
+    font-size: 16px;
+    height: 3em;
+    width: 4em;
+  }
 }
