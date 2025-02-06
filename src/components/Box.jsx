@@ -1,5 +1,4 @@
 
-
 import React, { useState, useEffect } from 'react';
 import style from './box.module.css';
 import 'animate.css';
@@ -71,7 +70,7 @@ const Box = () => {
         <div data-testid="score" className={style.score}>Score: {score}</div>
     
        
-        {correct !== null && (correct ? <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp">Correct<MdCelebration /></h1> : <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp">Wrong</h1>)}
+        {correct !== null && (correct ? <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp" style={{ color: 'white' }}>Correct<MdCelebration /></h1> : <h1 data-testid="gameStatus" className="animate__animated animate__fadeOutUp" style={{ color: 'white' }}>Wrong</h1>)}
         <button data-testid="newGameButton" className={style.reset} onClick={reset}>new game</button> 
       </div>
     </div>
